@@ -6,7 +6,9 @@ const AboutUs = () => {
   return (
     <div className="px-4 sm:px-20 py-8 mt-20 bg-white">
       <div className="p-4">
-        <h1 className="text-3xl font-bold mb-4">About Us</h1>
+        <h1 className="text-xl md:text-4xl font-black text-textdark text-start mb-2">
+          About Us
+        </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="py-8 lg:py-0">
             <p className="mb-4">

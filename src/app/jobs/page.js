@@ -15,7 +15,9 @@ const JobsPage = () => {
   return (
     <div className="px-4 sm:px-20 bg-white py-8 mt-20">
       <div className="p-4">
-        <p className="text-xl font-semibold mb-2">Available Jobs</p>
+        <p className="text-xl md:text-4xl font-black text-textdark text-start mb-2">
+          Available Jobs
+        </p>
         <div className="grid gap-4 grid-cols-1">
           {jobs.map((job, index) => (
             <Card

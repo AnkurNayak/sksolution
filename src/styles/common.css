@@ -103,6 +103,23 @@
   margin: 2rem auto 0;
 }
 
+.uim-svg {
+  fill: #766df4 !important;
+}
+
+.uim-svg svg {
+  display: inline-block;
+}
+.icons-md svg {
+  height: 32px;
+  width: 32px;
+}
+.uim-svg svg {
+  width: 24px;
+  height: 24px;
+  vertical-align: inherit;
+}
+
 *,
 *::before,
 *::after {
