@@ -20,6 +20,7 @@ const AppHeader = () => {
   const toggleNavigation = () => setIsOpen((prev) => !prev);
   const { scrollY } = useScroll();
   const [scrollVal, setScrollVal] = useState(0);
+  const pathName = usePathname();
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setScrollVal(latest);
@@ -35,10 +36,66 @@ const AppHeader = () => {
     zIndex: 60,
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (event.target.classList.contains("h-screen")) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      // Add overflow-hidden class to body
+      document.body.classList.add("overflow-hidden");
+
+      // Create a new div element for fullscreen overlay
+      const fullscreenDiv = document.createElement("div");
+      fullscreenDiv.classList.add(
+        "h-screen",
+        "w-screen",
+        "fixed",
+        "top-0",
+        "left-0",
+        "bg-black",
+        "opacity-75",
+        "z-50"
+      );
+
+      // Add event listener to handle click outside
+      fullscreenDiv.addEventListener("click", handleClickOutside);
+
+      // Append the div to the document body
+      document.body.appendChild(fullscreenDiv);
+    } else {
+      // Remove overflow-hidden class from body
+      document.body.classList.remove("overflow-hidden");
+
+      // Remove the fullscreen div
+      const fullscreenDiv = document.querySelector(".h-screen");
+      if (fullscreenDiv) {
+        fullscreenDiv.removeEventListener("click", handleClickOutside);
+        document.body.removeChild(fullscreenDiv);
+      }
+    }
+
+    // Cleanup function
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+      const fullscreenDiv = document.querySelector(".h-screen");
+      if (fullscreenDiv) {
+        fullscreenDiv.removeEventListener("click", handleClickOutside);
+        document.body.removeChild(fullscreenDiv);
+      }
+    };
+  }, [isOpen, setIsOpen]);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathName]);
+
   return (
     <>
       <motion.header
-        className="shadow-lg p-4 lg:p-6 min-w-max"
+        className={`shadow-lg p-4 lg:p-6 min-w-max ${isOpen && "bg-white"}`}
         style={fixedStyle}
         initial={{ background: "white" }}
         animate={{ background: scrollVal > 0 ? "" : "white" }}
@@ -100,8 +157,10 @@ const NavigationMenu = () => {
         <Link
           key={item.href}
           href={item.href}
-          className={`flex items-center p-2.5 w-full min-w-max rounded-md text-lg hover:text-primary font-semibold ${
-            pathName === item.href ? "text-primary" : "text-secondary"
+          className={`flex items-center p-2.5 w-full min-w-max rounded-md text-lg lg:hover:text-primary font-semibold ${
+            pathName === item.href
+              ? " text-white lg:text-primary bg-primary lg:bg-transparent"
+              : "text-secondary"
           }`}
         >
           {item.label}

@@ -1,3 +1,4 @@
+"use client";
 import AuthorImg from "@/assets/author.jpg";
 import Image from "next/image";
 import ContactSVG from "@/assets/contact.svg";
@@ -35,22 +36,27 @@ const AboutUs = () => {
             </p>
             <p className="font-semibold italic mb-4">- Author</p>
             <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
-            <p className="mb-4">
+            <span className="mb-4">
               Have questions or feedback? Feel free to reach out to us at{" "}
               <p className="text-blue-600 hover:underline">owner@mail.com</p> or
               call us at{" "}
               <p className="text-blue-600 hover:underline">+1 (234) 567-890</p>.
-            </p>
+            </span>
           </div>
-          <div className="flex w-full items-top justify-center order-first lg:order-last">
-            <div className="overflow-hidden h-96 w-96 flex items-center justify-center">
-              <Image
-                src={ContactSVG}
-                alt="author-img"
-                height={500}
-                width={500}
-              />
+          <div className="flex flex-col relative  order-first lg:order-last gap-2">
+            <div className="flex w-full items-top justify-center">
+              <div className="overflow-hidden h-80 w-80 flex items-center justify-center rounded-full">
+                <Image
+                  src={AuthorImg}
+                  alt="author-img"
+                  height={500}
+                  width={500}
+                />
+              </div>
             </div>
+            <h4 className="flex items-center justify-center  bottom-0 -black w-full text-lg">
+              Author Name
+            </h4>
           </div>
         </div>
       </div>

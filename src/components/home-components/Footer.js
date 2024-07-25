@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const AppFooter = () => {
   return (
-    <div>
+    <div className="bottom-0 relative">
       <div className="flex items-center w-full bg-[#343C3F] relative overflow-hidden">
         <div className="py-20 text-white grid grid-cols-1 md:grid-cols-2 gap-y-4 w-full px-4 sm:px-20">
           <span>

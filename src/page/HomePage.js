@@ -9,7 +9,7 @@ const HomePage = () => {
       <HomePageA />
       <HomePageB />
       <HomePageC />
-      <HomePageD />
+      {/* <HomePageD /> */}
     </div>
   );
 };
