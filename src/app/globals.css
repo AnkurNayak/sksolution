@@ -250,3 +250,11 @@ figure {
     opacity: 0;
   }
 }
+
+.common-gradient {
+  background: linear-gradient(
+    111.8deg,
+    rgb(0, 104, 155) 19.8%,
+    rgb(0, 173, 239) 92.1%
+  );
+}

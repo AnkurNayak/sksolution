@@ -1,5 +1,5 @@
 "use client";
-import AuthorImg from "@/assets/author.jpg";
+// import AuthorImg from "@/assets/author.jpg";
 import Image from "next/image";
 import ContactSVG from "@/assets/contact.svg";
 const AboutUs = () => {
@@ -36,7 +36,7 @@ const AboutUs = () => {
               hire or a job seeker seeking new opportunities, we are here to
               support you in your journey.
             </p>
-            <p className="font-semibold italic mb-4">- Author</p>
+            <p className="font-semibold italic mb-4">- SK JOB SOLUTION</p>
             <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
             <span className="mb-4">
               Have questions or feedback? Feel free to reach out to us at{" "}
@@ -47,18 +47,15 @@ const AboutUs = () => {
           </div>
           <div className="flex flex-col relative  order-first lg:order-last gap-2">
             <div className="flex w-full items-top justify-center">
-              <div className="overflow-hidden h-80 w-80 flex items-center justify-center rounded-full">
+              <div className="overflow-hidden flex items-center justify-center">
                 <Image
-                  src={AuthorImg}
-                  alt="author-img"
+                  src={ContactSVG}
+                  alt="contact-img"
                   height={500}
                   width={500}
                 />
               </div>
             </div>
-            <h4 className="flex items-center justify-center  bottom-0 -black w-full text-lg">
-              Author Name
-            </h4>
           </div>
         </div>
       </div>

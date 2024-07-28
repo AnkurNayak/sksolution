@@ -52,7 +52,7 @@ const Services = () => {
   return (
     <div className="px-4 sm:px-20 py-8 mt-20">
       <div className="sm:p-4">
-        <span className="text-xl md:text-4xl font-black text-textdark text-start">
+        <span className="text-xl md:text-4xl font-black text-textdark text-start flex gap-2">
           <p>Providing our trusted</p>
           <span className="text-orange-500">Services</span>
         </span>
