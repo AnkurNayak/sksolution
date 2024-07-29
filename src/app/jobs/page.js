@@ -50,7 +50,7 @@ const Card = ({
 
   return (
     <>
-      {/* {isOpen && <ApplyForm isOpen={isOpen} setIsOpen={setIsOpen} />} */}
+      {isOpen && <ApplyForm isOpen={isOpen} setIsOpen={setIsOpen} />}
       <div className="w-full p-4 rounded border-[1px] border-slate-300 relative overflow-hidden group bg-white">
         <motion.div
           // whileTap={{ background: "linear-gradient(to right, #7c3aed, #4f46e5)" }}
@@ -110,7 +110,7 @@ const ApplyForm = ({ isOpen, setIsOpen }) => {
               <p className="text-center mb-6">
                 Please fill out the form below to apply for the job.
               </p>
-              <form className="space-y-4">
+              <div className="space-y-4">
                 <div>
                   <label
                     htmlFor="name"
@@ -189,7 +189,7 @@ const ApplyForm = ({ isOpen, setIsOpen }) => {
                     placeholder="Write your cover letter here..."
                   />
                 </div>
-              </form>
+              </div>
               <div className="flex gap-2 mt-4">
                 <button
                   onClick={() => setIsOpen(false)}
