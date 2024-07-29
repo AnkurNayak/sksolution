@@ -57,7 +57,7 @@ const FooterTwo = () => {
     { text: "About Us", href: "/about-us" },
     { text: "Contact Us", href: "/contact-us" },
     { text: "Services", href: "/services" },
-    { text: "Team", href: "/team" },
+    { text: "Team", href: "" },
   ];
 
   const jobLinks = [

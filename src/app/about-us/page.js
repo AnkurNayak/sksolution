@@ -1,7 +1,7 @@
 "use client";
 import AuthorImg from "@/assets/author.jpg";
 import Image from "next/image";
-import ContactSVG from "@/assets/contact.svg";
+// import ContactSVG from "@/assets/contact.svg";
 const AboutUs = () => {
   return (
     <div className="px-4 sm:px-20 py-8 mt-20 bg-white">
