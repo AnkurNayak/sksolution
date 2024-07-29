@@ -6,12 +6,12 @@ import AppFooter from "@/components/home-components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "SK JOBS SOLUTION",
+  title: "SK JOB SOLUTION",
   description:
     "Your go-to platform for job solutions and career advice. Explore opportunities, enhance your skills, and connect with experts.",
   viewport: "width=device-width, initial-scale=1.0",
   keywords: "jobs, career solutions, job opportunities, career advice",
-  author: "SK JOBS SOLUTION Team",
+  author: "SK JOB SOLUTION Team",
   robots: "index, follow",
   charset: "UTF-8",
 };
