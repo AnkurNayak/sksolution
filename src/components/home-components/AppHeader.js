@@ -183,7 +183,7 @@ const PhoneButton = () => {
         <HiPhone color="#766DF4" size={16} />
       </span>
       <span className="relative md:text-xl text-white font-medium min-w-max">
-        +91-0123456789
+        +917635841818
       </span>
     </motion.button>
   );

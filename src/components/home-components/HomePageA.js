@@ -1,5 +1,6 @@
 import { HiOutlineBriefcase, HiOutlineMagnifyingGlass } from "react-icons/hi2";
 import HomeImg from "./HomeImg";
+import Link from "next/link";
 
 const HomePageA = () => {
   return (
@@ -45,12 +46,15 @@ const JobSearch = () => {
           placeholder="Job, Company name"
         />
       </div>
-      <button className="py-2.5 px-5 bg-primary hover:bg-indigo-700 flex text-white items-center justify-center">
+      <Link
+        href="/jobs"
+        className="py-2.5 px-5 bg-primary hover:bg-indigo-700 flex text-white items-center justify-center"
+      >
         <span className="flex gap-1 items-center">
           <HiOutlineMagnifyingGlass color="white" size={32} />
           <span className="min-w-max">Find Job</span>
         </span>
-      </button>
+      </Link>
     </div>
   );
 };

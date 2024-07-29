@@ -159,7 +159,7 @@ const ApplyForm = ({ isOpen, setIsOpen }) => {
                     placeholder="+91 9876543210"
                   />
                 </div>
-                <div>
+                {/* <div>
                   <label
                     htmlFor="resume"
                     className="block text-lg font-medium mb-1"
@@ -173,7 +173,7 @@ const ApplyForm = ({ isOpen, setIsOpen }) => {
                     accept=".pdf,.doc,.docx"
                     className="w-full p-2 rounded border border-gray-300 text-white"
                   />
-                </div>
+                </div> */}
                 <div>
                   <label
                     htmlFor="coverLetter"

@@ -40,9 +40,11 @@ const AboutUs = () => {
             <h2 className="text-xl font-semibold mb-2">Contact Us</h2>
             <span className="mb-4">
               Have questions or feedback? Feel free to reach out to us at{" "}
-              <p className="text-blue-600 hover:underline">owner@mail.com</p> or
-              call us at{" "}
-              <p className="text-blue-600 hover:underline">+1 (234) 567-890</p>.
+              <p className="text-blue-600 hover:underline">
+                skkjobsolutions@gmail.com
+              </p>{" "}
+              or call us at{" "}
+              <p className="text-blue-600 hover:underline">+917635841818</p>.
             </span>
           </div>
           <div className="flex flex-col relative  order-first lg:order-last gap-2">
