@@ -64,7 +64,7 @@ const FooterTwo = () => {
     { text: "Browse Categories", href: "" },
     { text: "Browse Jobs", href: "/jobs" },
     { text: "Job Details", href: "" },
-    { text: "Bookmark Jobs", href: "" },
+    // { text: "Bookmark Jobs", href: "" },
   ];
 
   return (
@@ -124,7 +124,7 @@ const FooterTwo = () => {
           <FaFacebookF size={18} color="#dde9fc" />
         </Link>
         <Link
-          href="#"
+          href="https://www.instagram.com/skjobsolution2024/?utm_source=qr&igsh=YnBkaXgxamVncDI1"
           className="p-2 rounded-full border border-accent hover:bg-gray-700"
         >
           <RiInstagramFill size={18} color="#dde9fc" />
@@ -137,7 +137,7 @@ const FooterTwo = () => {
           <FaTwitter size={18} color="#dde9fc" />
         </Link>
         <Link
-          href="#"
+          href="https://wa.me/917635841818"
           passHref
           className="p-2 rounded-full border border-accent hover:bg-gray-700"
         >
@@ -153,7 +153,7 @@ const FooterTwo = () => {
         </p>
       </div>
       <p className="flex items-center justify-center mt-4">
-        © 2024 ankurzac3@gmail.com. All rights reserved.
+        © 2024 skkjobsolutions@gmail.com. All rights reserved.
       </p>
     </footer>
   );

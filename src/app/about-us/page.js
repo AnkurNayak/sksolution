@@ -1,12 +1,12 @@
 "use client";
-// import AuthorImg from "@/assets/author.jpg";
+import AuthorImg from "@/assets/author.jpg";
 import Image from "next/image";
 import ContactSVG from "@/assets/contact.svg";
 const AboutUs = () => {
   return (
     <div className="px-4 sm:px-20 py-8 mt-20 bg-white">
       <div className="p-4">
-        <h1 className="text-xl md:text-4xl font-black text-textdark text-start mb-2">
+        <h1 className="text-xl md:text-4xl font-black text-textdark text-start mb-4">
           About Us
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -42,16 +42,16 @@ const AboutUs = () => {
               Have questions or feedback? Feel free to reach out to us at{" "}
               <p className="text-blue-600 hover:underline">
                 skkjobsolutions@gmail.com
-              </p>{" "}
+              </p>
               or call us at{" "}
               <p className="text-blue-600 hover:underline">+917635841818</p>.
             </span>
           </div>
           <div className="flex flex-col relative  order-first lg:order-last gap-2">
             <div className="flex w-full items-top justify-center">
-              <div className="overflow-hidden flex items-center justify-center">
+              <div className="overflow-hidden flex items-center justify-center rounded-full h-80 w-80 md:h-96 md:w-96">
                 <Image
-                  src={ContactSVG}
+                  src={AuthorImg}
                   alt="contact-img"
                   height={500}
                   width={500}
