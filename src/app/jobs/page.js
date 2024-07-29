@@ -1,13 +1,13 @@
 "use client";
 import { jobs } from "@/components/mock-api/HomePageMockApi";
-import Link from "next/link";
+// import Link from "next/link";
 import {
   HiCurrencyRupee,
   HiMapPin,
   HiMiniPhone,
-  HiOutlineCurrencyRupee,
-  HiOutlineMapPin,
-  HiOutlinePhoneArrowDownLeft,
+  // HiOutlineCurrencyRupee,
+  // HiOutlineMapPin,
+  // HiOutlinePhoneArrowDownLeft,
 } from "react-icons/hi2";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
@@ -43,14 +43,14 @@ const Card = ({
   jobDescription,
   location,
   salaryRange,
-  applyLink,
+  // applyLink,
   phone,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
-      {isOpen && <ApplyForm isOpen={isOpen} setIsOpen={setIsOpen} />}
+      {/* {isOpen && <ApplyForm isOpen={isOpen} setIsOpen={setIsOpen} />} */}
       <div className="w-full p-4 rounded border-[1px] border-slate-300 relative overflow-hidden group bg-white">
         <motion.div
           // whileTap={{ background: "linear-gradient(to right, #7c3aed, #4f46e5)" }}
